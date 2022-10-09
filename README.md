@@ -10,6 +10,11 @@ In this project sampling algorithims and supervised machine learning models were
 ### Naive Random Oversampling
 
 ![Naive Random Oversampling](/Resources/naive_random_oversampling.PNG)
+In the Naive Random Oversampling model, instances of the minority class (high risk) are randomly selected and added to the training set until both classes are balanced. A logistical regression was used with the resampled data.
+
+- Accuracy Score: .64
+- Precision Score: .01
+- Recall: .72
 
 ### SMOTE Oversampling
 
