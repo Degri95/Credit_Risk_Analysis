@@ -31,7 +31,7 @@ In the SMOTE Oversampling algorithm, new instances of minority class are interpo
 
 ![Cluster Centroids](/Resources/clustercentroids.PNG)
 
-In the Cluster Centroid algorithm, undersampling is used. Clusters of the majority class are identified and synthetic data points are generated. The majority class is then undersampled to the size of the minority class. A logistic regression model was used the with the resampled data.
+In the Cluster Centroid algorithm, under-sampling is used. Clusters of the majority class are identified and synthetic data points are generated. The majority class is then under-sampled to the size of the minority class. A logistic regression model was used the with the resampled data.
 
 - **Accuracy Score:** .54
 - **Precision Score:** .01
@@ -41,7 +41,7 @@ In the Cluster Centroid algorithm, undersampling is used. Clusters of the majori
 
 ![SMOTEENN](/Resources/SMOTEENN.PNG)
 
-In the SMOTEENN algorithm, over and undersampling is used. The minority class is first oversampled with SMOTE, and then the resulting data is cleaned with an undersampling stategy until balanced. A logistic regression model was used with the resampled data.
+In the SMOTEENN algorithm, over and under-sampling is used. The minority class is first over-sampled with SMOTE, and then the resulting data is cleaned with an undersampling stategy until balanced. A logistic regression model was used with the resampled data.
 
 - **Accuracy Score:** .67
 - **Precision Score:** .01
@@ -51,7 +51,20 @@ In the SMOTEENN algorithm, over and undersampling is used. The minority class is
 
 ![Balanced Random Forest Classifier](/Resources/balanced_random_forest_classifier.PNG)
 
+The Balanced Random Forest Classifier randomly under-samples the dataset when bootstrapping from the training dataset. Each tree in the forest is provided with a balanced bootstrap sample. the base train_test_split data was used in this model. 
+
+- **Accuracy Score:** .78
+- **Precision Score:** .03
+- **Recall:** .70
+
 ### Easy Ensemble AdaBoost Classifier
 
 ![Easy Ensemble Classifier](/Resources/easyensemble.PNG)
- 
+
+The Easy Ensemble Classifier is an ensemble of AdaBoost learners trained on different balanced bootstrap samples. Balancing is achieved by random under-sampling. The base train_test_split data was used in this model.
+
+- **Accuracy Score:** .93
+- **Precision Score:** .09
+- **Recall:** .92
+
+## Summary
