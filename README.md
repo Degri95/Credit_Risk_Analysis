@@ -51,7 +51,7 @@ In the SMOTEENN algorithm, over and under-sampling is used. The minority class i
 
 ![Balanced Random Forest Classifier](/Resources/balanced_random_forest_classifier.PNG)
 
-The Balanced Random Forest Classifier randomly under-samples the dataset when bootstrapping from the training dataset. Each tree in the forest is provided with a balanced bootstrap sample. the base train_test_split data was used in this model. 
+The Balanced Random Forest Classifier randomly under-samples the data when bootstrapping from the training dataset. Each tree in the forest is provided with a balanced bootstrap sample. The base train_test_split data was used in this model. 
 
 - **Accuracy Score:** .78
 - **Precision Score:** .03
