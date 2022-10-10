@@ -41,7 +41,7 @@ In the Cluster Centroid algorithm, under-sampling is used. Clusters of the major
 
 ![SMOTEENN](/Resources/SMOTEENN.PNG)
 
-In the SMOTEENN algorithm, over and under-sampling is used. The minority class is first over-sampled with SMOTE, and then the resulting data is cleaned with an undersampling stategy until balanced. A logistic regression model was used with the resampled data.
+In the SMOTEENN algorithm, over and under-sampling is used. The minority class is first over-sampled with SMOTE, and then the resulting data is cleaned with an undersampling strategy until balanced. A logistic regression model was used with the resampled data.
 
 - **Accuracy Score:** .67
 - **Precision Score:** .01
@@ -63,8 +63,10 @@ The Balanced Random Forest Classifier randomly under-samples the dataset when bo
 
 The Easy Ensemble Classifier is an ensemble of AdaBoost learners trained on different balanced bootstrap samples. Balancing is achieved by random under-sampling. The base train_test_split data was used in this model.
 
-- **Accuracy Score:** .93
+- **Accuracy Score:** .92
 - **Precision Score:** .09
 - **Recall:** .92
 
 ## Summary
+
+When looking at all of the models, the Easy Ensemble Classifier performs the best. All three scores were higher then the previous models at predicting high risk. While the precision is still very low, it had a recall of 92%, meaning it predicted 92% of the high risk data correctly. The 9% percision of the model means that only 9% of the high risk predictions were actually high risk. I would recommend the model is used to initially detect high risk customers, and then additional research to correctly determine the correct risk level.
